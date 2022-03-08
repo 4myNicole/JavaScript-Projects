@@ -1,0 +1,30 @@
+/* THIS CONTAINER INCLUDES TABLE AND CANVAS */
+
+.center-container {
+    width: 608px; /* WIDTH OF CONTAINER */
+    margin: 0 auto; /* CENTER CONTAINER */
+    margin-top: 50px; /* No PIXELS FROM TOP */
+}
+
+table {
+    border-collapse: collapse; /*COLLAPSE TABLE BORDER INTO 1 BORDER*/
+    border-style: hidden; /*HIDES OUTER TABLE BORDER*/
+}
+
+td {
+    cursor: pointer; /*CURSOR CHANGES TO INDEX FINGER HAND WHEN HOVERING OVER td ELEMENTS*/
+    border: 4px solid rgba(255, 0, 212, 0.8);
+    padding: 0px; /*REMOVE DEFAULT PADDING*/
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    position: absolute; /*SETS CANVAS AS TOP LEFT CORNER OF CONTAINER*/
+    z-index: 10; /*PLACES CANVAS OVER THE TOP OF THE TABLE*/
+    pointer-events: none; /*MAKES CANVAS INVISIBLE*/
+}
+
+h1 {
+    text-align: center;
+}
