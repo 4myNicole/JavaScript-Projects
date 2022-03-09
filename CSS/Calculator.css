@@ -1,0 +1,161 @@
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid darkslategray;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border:  none;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid darkslategray;
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.06));
+    text-shadow: 0 1px rgba(255,255,255,.4);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.05), inset 0 -1px 0 0 rgba(255,255,255,.05), 0 1px 0 0 rgba(255,255,255,.05);
+}
+
+button:hover {
+    background-color: #e1e1e1;
+}
+
+.operator {
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.5));
+    background-color: lightgray;
+}
+
+.all-clear_function {
+    background-color: black;
+    color: #fff;
+}
+
+.decimal_function {
+    background-color: white;
+    color: black;
+}
+
+.all-clear_function:hover {
+    background-color: white;
+    color: black;
+}
+
+.equal-sign_operator {
+    background-color: grey;
+    border-color: darkslategray;
+    color: #fff;
+    height: 100%;
+    grid-area: 2 / 4 / 6 /5;
+}
+
+.equal-sign_operator:hover {
+    background-color: darkblue;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px
+}
+
+.zero, .eight {
+    background-color: red;
+}
+
+.zero:hover, .eight:hover {
+    background-color: black;
+    color: red
+}
+
+.one, .nine {
+    background-color: orange;
+}
+
+.one:hover, .nine:hover {
+    background-color: black;
+    color: darkorange
+}
+
+.two {
+    background-color: yellow;
+}
+
+.two:hover {
+    background-color: black;
+    color: yellow
+}
+
+.three {
+    background-color: green;
+}
+
+.three:hover {
+    background-color: black;
+    color: green
+}
+
+.four {
+    background-color: blue;
+}
+
+.four:hover {
+    background-color: black;
+    color: blue
+}
+
+.five {
+    background-color: indigo;
+}
+
+.five:hover {
+    background-color: black;
+    color: indigo
+}
+
+.six {
+    background-color: violet;
+}
+
+.six:hover {
+    background-color: black;
+    color: violet
+}
+
+.seven {
+    background-color: pink;
+}
+
+.seven:hover {
+    background-color: black;
+    color: pink
+}
