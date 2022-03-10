@@ -54,22 +54,27 @@ button:hover {
     background-color: lightgray;
 }
 
-.all-clear_function {
+.all-clear {
     background-color: black;
     color: #fff;
 }
 
-.decimal_function {
+.decimal {
     background-color: white;
     color: black;
 }
 
-.all-clear_function:hover {
+.decimal:hover {
+    background-color: black;
+    color: white;
+}
+
+.all-clear:hover {
     background-color: white;
     color: black;
 }
 
-.equal-sign_operator {
+.equal-sign {
     background-color: grey;
     border-color: darkslategray;
     color: #fff;
