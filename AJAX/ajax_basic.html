@@ -8,12 +8,12 @@
     <body>
         <div class="main">
 			<h2>Get The Latest Content:</h2>
-			<div class='content' id="content">
+			<div class='content' id="content"> 
 				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
 			</div>
 		<script type="text/javascript">
 			var ajax = XMLHttpRequest()
-            ajax.open('GET', 'content.html') ;
+            ajax.open('GET', 'content.html') ; //extractig content from another html file
             ajax.onreadystatechanges = function() {
                 if (ajax.readystate = 4) {
                 document.getElementById('content').innerHTML = ajax.responseText;
@@ -21,7 +21,7 @@
             }
             function getContent() {
                 ajax.send();
-                document.getElementById('btn_content').style.display = 'none';
+                document.getElementById('btn_content').style.display = 'none'; //getting rid of button
             }
 		</script>
     </body>
