@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script> 
+
+$("document").ready(function(){
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery!</h1>\
+                    <p id='1'>Click for next paragraph</p>\
+                    <p id='2'>Click for another paragraph</p>\
+                    <p id='3'>Youve reached the last paragraph!</p>\
+                    </div>\
+                </div>\
+            </body>"
+    );
+    $("p").css({"color":"red"}); /* Change ALL paragraph font color*/
+    $("#2").css({ "color": "blue" }); /* Change paragraph font color with ID number 2 paragraph font*/
+
+    $("#2").hide();  /* Hide paragraph with id number 2*/
+    $("#3").hide();  /* Hide paragraph with id number 3*/
+
+    $("#1").click(function() { /* When id number 1 is clicked ..*/
+    $("#2").show("slow");            /* .. show  id number 2*/
+    });
+
+    $("#2").click(function () { /* When id number 2 is clicked ..*/
+    $("#3").show("slow");            /* .. show  id number 3*/
+    });
+});
+
+
+
+
+
+</script>
+
+
+
+
+</html>
