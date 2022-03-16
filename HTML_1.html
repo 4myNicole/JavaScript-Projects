@@ -2,11 +2,43 @@
 <html>
     <head> 
         <script src="JavaScript/JavaScript_1.js" defer></script>
+        <link rel="stylesheet" href="CSS/CSS_1.css">
         <meta charset="UTF-8">
     </head>
 
     <body>
+        <script>
+            document.body.classList.add('fade-out');
+        </script>
+
+        <nav><a href="#main-head">Favourite Animal </a> |
+        <a href="#text-change">Text change</a> |
+        <a href="#My_Cat">Canvases</a> |
+    </nav>
+
+<div class="sticky">I hope you're having a lovely day!</div>
+
+        <!-- POP UP FORM-->
+        <button class="open_button" onclick="openForm()">Open Login Form</button>
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+       
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+        <!-- END POP UP FORM-->
+<br>
+<br>
+<div id="main-head">
         <h1>What is your favourite Animal?</h1>
+        </div>
         <h3> Pick one from the list:</h3>
 
         <ul> 
@@ -24,8 +56,9 @@
         <button onclick="Animal_Function()"> Submit Animal</button>
         <p id="Output"></p>
 
-
-        <h1 class="Change"> This text will not change!</h1>
+        
+<div id="text-change"></div>
+        <h1 style="font-size:5vw;" class="Change"> This text will not change!</h1>
         <h2 class="Change"> This text will not change!</h2>
         <h3 class="Change"> This text will not change!</h3>
         <h4>Click and find out!</h4>
@@ -37,8 +70,45 @@
         <canvas id="My_Cat" width="700" height="300" style="border:5px solid rgb(35, 54, 224);"></canvas>
 
         <canvas id="my_Gradient" width="700" height="300" style="border:5px solid rgb(224, 35, 35);"></canvas>
-    </body>
 
+        <form name="fillform"   method="post">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br>
+            <label for="number">Mobile Number:</label><br>
+            <input type="text" id="number" name="number" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
 
+        <div id="pets">
+        <img src="Images/babies.jpg" alt="2 cats, 1 dog">
+        </div>
+        
+            <div id="slideshow">
+                <div> 
+                    <img src="Images/archie.jpg" width="220" height="220">Archie
+                </div>
+                <div> 
+                    <img src="Images/lun.jpg" width="220" height="220">Luna
+                </div>
+                <div> 
+                <img src="Images/prince.jpg" width="220" height="220">Prince
+                </div>
+
+            </div>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+ $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function () {
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 3000);
+</script>
+</body>
 
     </html>
