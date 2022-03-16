@@ -1,0 +1,119 @@
+body {
+  opacity: 1;
+  transition: 3s opacity;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+
+html {
+  background-color: rgba(109, 205, 243, 0.685);
+}
+
+* {box-sizing: border-box;}
+
+
+.open_button {
+  background-color: rgb(77, 175, 20);
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(109, 205, 243);
+}
+
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #dad6d6;
+}
+
+.form-container .btn {
+  background-color: rgb(77, 175, 20);
+  color: black;
+  padding: 16px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+.form-container .cancel {
+  position: relative;
+  background-color: rgb(97, 94, 94);
+}
+
+
+h1 {
+position: relative;
+animation: movehead 3s ;
+}
+        
+@keyframes movehead {
+from {top: 0px;}
+to {top: 0px;  
+left: 50px;}
+}
+
+@keyframes zoominoutsinglefeatured  {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.pets img{
+  position: relative;
+	animation: zoominoutsinglefeatured  2s forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#slideshow { 
+  margin: 50px auto; 
+  position: relative; 
+  width: 240px; 
+  height: 240px; 
+  padding: 10px; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
+}
+
+.sticky {
+    position: -webkit - sticky;
+    position: sticky;
+    top: 0px; 
+    background-color: rgb(227, 90, 240);
+    font-size: 20px;
+}
