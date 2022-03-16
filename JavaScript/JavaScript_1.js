@@ -48,8 +48,14 @@ ctx.fillStyle = grd;
 ctx.fillRect(1, 1, 500, 298);
 
 
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});
 
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
 
-
-
-
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
