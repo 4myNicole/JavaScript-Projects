@@ -6,6 +6,8 @@
 [Tic Tac Toe Game]()
 [Calculator]()
 
+<hr>
+
 ### Pizza Menu
 Website for selecting size and toppinga for Pizza and outputting a price.
 
