@@ -1,5 +1,5 @@
 # JavaScript-Projects
 
-<hr>
-
 My Projects
+
+[Pizza menu](JavaScript-Projects/Pizza_Project)
