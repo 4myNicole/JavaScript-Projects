@@ -2,4 +2,4 @@
 
 My Projects
 
-[Pizza menu](JavaScript-Projects/Pizza_Project)
+[Pizza menu](JavaScript-Projects/tree/main/Pizza_Project)
