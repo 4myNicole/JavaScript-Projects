@@ -2,9 +2,9 @@
 
 ## My Projects
 
-[Pizza menu](4myNicole/JavaScript-Projects/tree/main/Pizza_Project)
+[Pizza menu](https://github.com/4myNicole/JavaScript-Projects/tree/main/Pizza_Project)
 
-[Tic Tac Toe Game]()
+[Tic Tac Toe Game](https://github.com/4myNicole/JavaScript-Projects/tree/main/TicTacToe)
 
 [Calculator](https://github.com/4myNicole/JavaScript-Projects/tree/main/Calculator)
 
