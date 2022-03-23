@@ -3,7 +3,9 @@
 ## My Projects
 
 [Pizza menu](4myNicole/JavaScript-Projects/tree/main/Pizza_Project)
+
 [Tic Tac Toe Game]()
+
 [Calculator]()
 
 <hr>
